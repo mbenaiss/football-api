@@ -1,8 +1,8 @@
 package data
 
 import (
+	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"os"
 
@@ -23,16 +23,11 @@ func GetDataFromApi() ([]models.MatchResult, error) {
 		return nil, err
 	}
 	defer res.Body.Close()
-	body, err := ioutil.ReadAll(res.Body)
-	if err != nil {
+	var match models.Match
+	if err := json.NewDecoder(res.Body).Decode(&match); err != nil {
 		return nil, err
 	}
-	match, err := models.UnmarshalMatch(body)
-	if err != nil {
-		return nil, err
-	}
-	matches := convertModel(match)
-	return matches, nil
+	return convertModel(match), nil
 }
 
 func convertModel(match models.Match) []models.MatchResult {
