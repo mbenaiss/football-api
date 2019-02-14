@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/mbenaiss/go-graphql-football-api/models"
+	"github.com/mbenaiss/football-api/models"
 )
 
 func TestFilters(t *testing.T) {

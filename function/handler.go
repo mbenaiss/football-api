@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/mbenaiss/go-graphql-football-api/graphql"
+	"github.com/mbenaiss/football-api/graphql"
 )
 
 func Matches(w http.ResponseWriter, r *http.Request) {

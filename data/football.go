@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/mbenaiss/go-graphql-football-api/models"
+	"github.com/mbenaiss/football-api/models"
 )
 
 func GetDataFromApi() ([]models.MatchResult, error) {

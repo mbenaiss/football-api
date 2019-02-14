@@ -1,6 +1,6 @@
 package queries
 
-import "github.com/mbenaiss/go-graphql-football-api/models"
+import "github.com/mbenaiss/football-api/models"
 
 func filter(matches []models.MatchResult, filters map[string]interface{}) []models.MatchResult {
 	if len(filters) == 0 {

@@ -2,7 +2,7 @@ package graphql
 
 import (
 	"github.com/graphql-go/graphql"
-	"github.com/mbenaiss/go-graphql-football-api/graphql/queries"
+	"github.com/mbenaiss/football-api/graphql/queries"
 )
 
 func getSchema() (graphql.Schema, error) {

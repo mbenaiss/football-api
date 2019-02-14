@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/mbenaiss/go-graphql-football-api/function"
+	"github.com/mbenaiss/football-api/function"
 )
 
 func main() {
