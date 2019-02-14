@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/go-graphql-football-api"
+	"github.com/mbenaiss/go-graphql-football-api/function"
 )
 
 func main() {
-	http.HandleFunc("/graphql", functions.Matches)
+	http.HandleFunc("/graphql", function.Matches)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

@@ -1,9 +1,9 @@
 package queries
 
 import (
-	"github.com/go-graphql-football-api/data"
-	"github.com/go-graphql-football-api/graphql/types"
 	"github.com/graphql-go/graphql"
+	"github.com/mbenaiss/go-graphql-football-api/data"
+	"github.com/mbenaiss/go-graphql-football-api/graphql/types"
 )
 
 func GetMatchQuery() *graphql.Field {
